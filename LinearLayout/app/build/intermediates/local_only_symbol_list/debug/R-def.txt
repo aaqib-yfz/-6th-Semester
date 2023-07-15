@@ -1,0 +1,18 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id edtTxt1
+id first_txtView
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string firstBtn
+string firstText
+style Base.Theme.RelativeLayout
+style Theme.RelativeLayout
+xml backup_rules
+xml data_extraction_rules
