@@ -1,42 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:overrideLibrary="androidx.wear.tiles.material"
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    tools:overrideLibrary="androidx.wear.tiles.material"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content">-->
+<!--    <TextView-->
+<!--        android:id="@+id/label"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Email" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/inputEmail"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/label" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnLogin"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content" android:layout_below="@id/inputEmail"-->
+<!--        android:layout_alignParentLeft="true" android:layout_marginRight="10px"-->
+<!--        android:text="Login" />-->
+
+<!--    <Button android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toRightOf="@id/btnLogin"-->
+<!--        android:layout_alignTop="@id/btnLogin" android:text="Cancel" />-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:text="Register new Account"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+
+<!--</RelativeLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
     <TextView
-        android:id="@+id/label"
+        android:id="@+id/first_txtView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email" />
-
+        android:text="@string/firstText"
+        android:textSize="16sp"
+        android:textStyle="bold"
+            
+        />
     <EditText
-        android:id="@+id/inputEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/label" />
-
+        android:id="@+id/edtTxt1"
+        android:textSize="16sp"
+        android:autofillHints="Enter"
+        android:inputType="text" />
+    
     <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_below="@id/inputEmail"
-        android:layout_alignParentLeft="true" android:layout_marginRight="10px"
-        android:text="Login" />
-
-    <Button android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/btnLogin"
-        android:layout_alignTop="@id/btnLogin" android:text="Cancel" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="Register new Account"
-        android:layout_centerHorizontal="true"/>
-
-</RelativeLayout>
-
+        android:layout_width="125dip"
+        android:layout_height="50dip"
+        android:text="@string/firstBtn"
+        android:textStyle="bold"
+        />
+</LinearLayout>
 
 
 
